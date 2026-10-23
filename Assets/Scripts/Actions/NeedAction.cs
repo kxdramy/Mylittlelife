@@ -19,6 +19,15 @@ public class NeedAction : MonoBehaviour, IUtilityAction
     private NavMeshAgent agent;
 
     public string ActionName => actionName;
+    
+    public Transform InteractionPoint => target;
+
+    public NeedType AffectedNeed => needType;
+
+    public float RecoveryAmount => restoreAmount;
+
+    public float Duration => actionDuration;
+
 
     private void Awake()
     {

@@ -12,7 +12,7 @@ public class ControlModeManager : MonoBehaviour
     private UtilityAI utilityAI;
 
     private bool autoMode = false;
-
+    public bool IsAutoMode => autoMode;
     private void Awake()
     {
         playerController = GetComponent<PlayerController>();

@@ -21,7 +21,7 @@ public class UtilityAI : MonoBehaviour
         new ActionSelector();
 
     private Coroutine aiRoutine;
-
+    public string CurrentAction { get; private set; } = "Ожидание";
     private void Awake()
     {
         needs = GetComponent<NPCNeeds>();
@@ -60,6 +60,7 @@ public class UtilityAI : MonoBehaviour
         }
 
         movement.StopMovement();
+        CurrentAction = "Ожидание";
     }
 
     private IEnumerator AILoop()
@@ -74,6 +75,7 @@ public class UtilityAI : MonoBehaviour
 
             if (bestAction != null)
             {
+                CurrentAction = bestAction.ActionName;
                 float utility =
                     bestAction.GetUtility(needs);
 
@@ -85,6 +87,7 @@ public class UtilityAI : MonoBehaviour
                 yield return bestAction.Execute(
                     needs, movement
                 );
+                CurrentAction = "Ожидание";
             }
             else
             {
