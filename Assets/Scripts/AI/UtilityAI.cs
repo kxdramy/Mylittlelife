@@ -3,6 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Две стратегии выбора действий Utility AI.
+public enum UtilitySelectionStrategy
+{
+    FirstOnTie,
+    LastOnTie
+}
+
 [RequireComponent(typeof(NPCNeeds))]
 [RequireComponent(typeof(NPCMovement))]
 public class UtilityAI : MonoBehaviour
@@ -11,22 +18,62 @@ public class UtilityAI : MonoBehaviour
     [SerializeField, Range(0.25f, 1f)]
     private float decisionInterval = 0.5f;
 
+    [Header("AI Strategy")]
+    [SerializeField]
+    private UtilitySelectionStrategy selectionStrategy =
+        UtilitySelectionStrategy.FirstOnTie;
+
     private NPCNeeds needs;
     private NPCMovement movement;
+
+    // Компонент отправки истории в PostgreSQL.
+    private AiDecisionMetricsSender metricsSender;
 
     private readonly List<IUtilityAction> actions =
         new List<IUtilityAction>();
 
+    // Стратегия выбора первого действия при равенстве.
     private readonly ActionSelector selector =
         new ActionSelector();
 
+    // Стратегия выбора последнего действия при равенстве.
+    private readonly LastOnTieSelector lastOnTieSelector =
+        new LastOnTieSelector();
+
     private Coroutine aiRoutine;
-    public string CurrentAction { get; private set; } = "Ожидание";
+
+    public string CurrentAction { get; private set; } =
+        "Ожидание";
+
+    public UtilitySelectionStrategy CurrentStrategy =>
+        selectionStrategy;
+
+    // Изменение стратегии выбора действий.
+    public void SetStrategy(UtilitySelectionStrategy strategy)
+    {
+        selectionStrategy = strategy;
+
+        Debug.Log(
+            "AI strategy changed to: " + selectionStrategy
+        );
+    }
+
     private void Awake()
     {
         needs = GetComponent<NPCNeeds>();
         movement = GetComponent<NPCMovement>();
 
+        // Получаем компонент отправки метрик.
+        metricsSender = GetComponent<AiDecisionMetricsSender>();
+
+        if (metricsSender == null)
+        {
+            Debug.LogWarning(
+                "AiDecisionMetricsSender не найден на Player!"
+            );
+        }
+
+        // Находим действия персонажа.
         NeedAction[] foundActions =
             GetComponents<NeedAction>();
 
@@ -47,7 +94,13 @@ public class UtilityAI : MonoBehaviour
             return false;
         }
 
+        Debug.Log(
+            "AI started with strategy: " +
+            selectionStrategy
+        );
+
         aiRoutine = StartCoroutine(AILoop());
+
         return true;
     }
 
@@ -60,33 +113,93 @@ public class UtilityAI : MonoBehaviour
         }
 
         movement.StopMovement();
+
         CurrentAction = "Ожидание";
     }
 
     private IEnumerator AILoop()
     {
-        // Wait for NavMeshAgent to initialize.
+        // Ждём инициализации NavMeshAgent.
         yield return null;
 
         while (true)
         {
-            IUtilityAction bestAction =
-                selector.SelectBestAction(actions, needs);
+            // =====================================
+            // ИЗМЕРЕНИЕ ВРЕМЕНИ ВЫБОРА ДЕЙСТВИЯ
+            // =====================================
+
+            System.Diagnostics.Stopwatch stopwatch =
+                System.Diagnostics.Stopwatch.StartNew();
+
+            IUtilityAction bestAction;
+
+            // Выбираем стратегию Utility AI.
+            if (selectionStrategy ==
+                UtilitySelectionStrategy.LastOnTie)
+            {
+                bestAction =
+                    lastOnTieSelector.SelectBestAction(
+                        actions, needs
+                    );
+            }
+            else
+            {
+                bestAction =
+                    selector.SelectBestAction(
+                        actions, needs
+                    );
+            }
+
+            // Получаем полезность выбранного действия.
+            float utility = 0f;
+
+            if (bestAction != null)
+            {
+                utility = bestAction.GetUtility(needs);
+            }
+
+            // Останавливаем измерение времени.
+            stopwatch.Stop();
+
+            double decisionTimeMs =
+                stopwatch.Elapsed.TotalMilliseconds;
+
+            // =====================================
+            // ВЫПОЛНЕНИЕ ВЫБРАННОГО ДЕЙСТВИЯ
+            // =====================================
 
             if (bestAction != null)
             {
                 CurrentAction = bestAction.ActionName;
-                float utility =
-                    bestAction.GetUtility(needs);
 
                 Debug.Log(
-                    "AI selected: " + bestAction.ActionName +
-                    " | Utility: " + utility.ToString("F1")
+                    "AI selected: " +
+                    bestAction.ActionName +
+                    " | Utility: " +
+                    utility.ToString("F1") +
+                    " | Strategy: " +
+                    selectionStrategy +
+                    " | Decision Time: " +
+                    decisionTimeMs.ToString("F3") +
+                    " ms"
                 );
 
+                // НОВОЕ: отправляем решение в PostgreSQL.
+                if (metricsSender != null)
+                {
+                    metricsSender.SendDecision(
+                        bestAction.ActionName,
+                        selectionStrategy,
+                        utility,
+                        decisionTimeMs
+                    );
+                }
+
+                // Выполняем выбранное действие.
                 yield return bestAction.Execute(
                     needs, movement
                 );
+
                 CurrentAction = "Ожидание";
             }
             else
@@ -96,7 +209,9 @@ public class UtilityAI : MonoBehaviour
                 );
             }
 
-            yield return new WaitForSeconds(decisionInterval);
+            yield return new WaitForSeconds(
+                decisionInterval
+            );
         }
     }
 }

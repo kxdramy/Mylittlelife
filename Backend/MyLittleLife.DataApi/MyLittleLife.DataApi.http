@@ -1,0 +1,6 @@
+@MyLittleLife.DataApi_HostAddress = http://localhost:5076
+
+GET {{MyLittleLife.DataApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

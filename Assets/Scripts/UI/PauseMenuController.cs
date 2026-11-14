@@ -1,4 +1,4 @@
-
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -6,6 +6,9 @@ using UnityEngine.InputSystem;
 
 public class PauseMenuController : MonoBehaviour
 {
+    [Header("Database")]
+    [SerializeField] private NPCNeedsPersistence needsPersistence;
+    
     [Header("Pause")]
     [SerializeField] private GameObject pauseOverlay;
     [SerializeField] private GameObject pauseWindow;
@@ -163,11 +166,30 @@ public class PauseMenuController : MonoBehaviour
         PlayerPrefs.Save();
     }
 
+    
     public void GoToMainMenu()
     {
+        StartCoroutine(SaveAndReturnToMenu());
+    }
+
+    private IEnumerator SaveAndReturnToMenu()
+    {
+        if (needsPersistence != null)
+        {
+            yield return StartCoroutine(
+                needsPersistence.SaveBeforeExit()
+            );
+        }
+        else
+        {
+            Debug.LogWarning(
+                "NPCNeedsPersistence не подключён!");
+        }
+
         Time.timeScale = 1f;
         SceneManager.LoadScene("StartMenu");
     }
+
 
     private void OnDestroy()
     {

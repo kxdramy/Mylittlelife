@@ -633,6 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3ba6bfc8efe89145af54cf600fe87e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenuController
+  needsPersistence: {fileID: 2036448519}
   pauseOverlay: {fileID: 293106990}
   pauseWindow: {fileID: 1245477309}
   pauseSettingsWindow: {fileID: 595357749}
@@ -9444,6 +9445,9 @@ GameObject:
   - component: {fileID: 2036448517}
   - component: {fileID: 2036448516}
   - component: {fileID: 2036448518}
+  - component: {fileID: 2036448519}
+  - component: {fileID: 2036448520}
+  - component: {fileID: 2036448521}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -9607,6 +9611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UtilityAI
   decisionInterval: 0.5
+  selectionStrategy: 0
 --- !u!114 &2036448509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9857,6 +9862,48 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 70c8bebf0da216849b25fae49e2db1ef, type: 3}
   stepInterval: 0.42
   minMoveSpeed: 0.15
+--- !u!114 &2036448519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036448496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85567ba1ae49b3e4daca34a78ee3d830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCNeedsPersistence
+  needs: {fileID: 2036448497}
+  apiUrl: http://localhost:5076/api/characters/1/needs
+  saveInterval: 10
+--- !u!114 &2036448520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036448496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e594d1dde6a215e438950ecfad5b6edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AiStrategyPersistence
+  utilityAI: {fileID: 2036448508}
+  apiUrl: http://localhost:5076/api/characters/1/ai-settings
+--- !u!114 &2036448521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036448496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a501a4323a614ce47a53357354513e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AiDecisionMetricsSender
+  apiUrl: http://localhost:5076/api/characters/1/ai-decisions
 --- !u!1 &2048784799
 GameObject:
   m_ObjectHideFlags: 0
