@@ -1,0 +1,1508 @@
+{
+  "fbx": "Assets/Models/Apartment/MyLittleRoom_Apartment.fbx",
+  "objects": 2482,
+  "meshes": 2461,
+  "polygons": 64453,
+  "textures": [
+    "Baked_Floor_Bedroom_7x7_BaseColor.png",
+    "Baked_Floor_KitchenLiving_10x8_BaseColor.png",
+    "Baked_Partition_BedroomLiving_Continuous_BaseColor.png",
+    "Baked_Partition_BedroomLiving_Continuous_Normal.png",
+    "Baked_Keyboard_BaseColor.png",
+    "Baked_KL_North_Wall_Finish_BaseColor.png",
+    "Baked_KL_North_Wall_Finish_Normal.png",
+    "Baked_KL_East_Wall_Finish_BaseColor.png",
+    "Baked_KL_East_Wall_Finish_Normal.png",
+    "Baked_KL_West_Wall_Finish_BaseColor.png",
+    "Baked_KL_West_Wall_Finish_Normal.png",
+    "Baked_Entrance_Woven_Mat_BaseColor.png",
+    "Baked_Entrance_Woven_Mat_Normal.png"
+  ],
+  "materials": [
+    {
+      "name": "URP_Bedroom_Light_Oak_Parquet_Floor_Bedroom_7x7",
+      "base": [
+        0.550000011920929,
+        0.3199999928474426,
+        0.15000000596046448,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.800000011920929,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": "Baked_Floor_Bedroom_7x7_BaseColor.png",
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Cream",
+      "base": [
+        0.8799999952316284,
+        0.800000011920929,
+        0.6499999761581421,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Warm_Parquet_Floor_KitchenLiving_10x8",
+      "base": [
+        0.550000011920929,
+        0.3199999928474426,
+        0.15000000596046448,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.800000011920929,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": "Baked_Floor_KitchenLiving_10x8_BaseColor.png",
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Apartment_Light_Walls",
+      "base": [
+        0.8799999952316284,
+        0.8500000238418579,
+        0.7799999713897705,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.800000011920929,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Warm_Milk",
+      "base": [
+        0.9300000071525574,
+        0.8799999952316284,
+        0.800000011920929,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Trim_Ivory",
+      "base": [
+        0.9700000286102295,
+        0.9399999976158142,
+        0.8700000047683716,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Milk",
+      "base": [
+        0.949999988079071,
+        0.9100000262260437,
+        0.8199999928474426,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Warm_Beige",
+      "base": [
+        0.7599999904632568,
+        0.6399999856948853,
+        0.49000000953674316,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KitchenLiving_Light_Warm_Beige_Wallpaper_Partition_BedroomLiving_Continuous",
+      "base": [
+        0.8299999833106995,
+        0.7649999856948853,
+        0.6549999713897705,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.9100000262260437,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": "Baked_Partition_BedroomLiving_Continuous_BaseColor.png",
+      "normalTexture": "Baked_Partition_BedroomLiving_Continuous_Normal.png"
+    },
+    {
+      "name": "URP_Bedroom_Oak",
+      "base": [
+        0.6200000047683716,
+        0.4099999964237213,
+        0.23000000417232513,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.75,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Rose",
+      "base": [
+        0.8299999833106995,
+        0.4000000059604645,
+        0.5199999809265137,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.75,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Cream",
+      "base": [
+        0.9399999976158142,
+        0.8700000047683716,
+        0.7099999785423279,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.75,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Blush",
+      "base": [
+        0.9599999785423279,
+        0.6899999976158142,
+        0.7300000190734863,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.75,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Sky",
+      "base": [
+        0.4300000071525574,
+        0.699999988079071,
+        0.8399999737739563,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.75,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Light_Oak",
+      "base": [
+        0.7300000190734863,
+        0.5799999833106995,
+        0.38999998569488525,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Dark",
+      "base": [
+        0.06499999761581421,
+        0.10000000149011612,
+        0.14000000059604645,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.75,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_PC_Screen_On",
+      "base": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "metallic": 0.0,
+      "roughness": 0.3799999952316284,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_PC_Keyboard_Backlit_Keyboard",
+      "base": [
+        0.800000011920929,
+        0.5899999737739563,
+        0.6399999856948853,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.3799999952316284,
+      "alpha": 1.0,
+      "emission": [
+        0.25,
+        0.5199999809265137,
+        0.699999988079071,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": "Baked_Keyboard_BaseColor.png",
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Sage",
+      "base": [
+        0.38999998569488525,
+        0.6200000047683716,
+        0.46000000834465027,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.75,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Powder_Wall",
+      "base": [
+        0.8600000143051147,
+        0.6100000143051147,
+        0.6600000262260437,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Brass",
+      "base": [
+        0.5899999737739563,
+        0.4300000071525574,
+        0.20999999344348907,
+        1.0
+      ],
+      "metallic": 0.6499999761581421,
+      "roughness": 0.7200000286102295,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_PC_Power_Indicator",
+      "base": [
+        0.3400000035762787,
+        0.4300000071525574,
+        0.47999998927116394,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.3799999952316284,
+      "alpha": 1.0,
+      "emission": [
+        0.20000000298023224,
+        0.6000000238418579,
+        0.8500000238418579,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Mirror_Silver",
+      "base": [
+        0.8600000143051147,
+        0.9100000262260437,
+        0.9399999976158142,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.07999999821186066,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Curtain_Linen",
+      "base": [
+        0.9100000262260437,
+        0.7699999809265137,
+        0.7599999904632568,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.699999988079071,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Warm_Emissive",
+      "base": [
+        1.0,
+        0.6499999761581421,
+        0.30000001192092896,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.699999988079071,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        0.6499999761581421,
+        0.30000001192092896,
+        1.0
+      ],
+      "emissionStrength": 3.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Botanical_Soft_Stem",
+      "base": [
+        0.30000001192092896,
+        0.3199999928474426,
+        0.14000000059604645,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.699999988079071,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Botanical_Green_0",
+      "base": [
+        0.1899999976158142,
+        0.36000001430511475,
+        0.17000000178813934,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.699999988079071,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Botanical_Green_1",
+      "base": [
+        0.2800000011920929,
+        0.46000000834465027,
+        0.2199999988079071,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.699999988079071,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Botanical_Green_2",
+      "base": [
+        0.3700000047683716,
+        0.5299999713897705,
+        0.28999999165534973,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.699999988079071,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Botanical_Green_3",
+      "base": [
+        0.23999999463558197,
+        0.4099999964237213,
+        0.25,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.699999988079071,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Panorama_Sheer_Ivory",
+      "base": [
+        0.89,
+        0.94,
+        0.93,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.7,
+      "alpha": 0.16,
+      "emission": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "emissionStrength": 0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bedroom_Window_Glass",
+      "base": [
+        0.89,
+        0.94,
+        0.93,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.7,
+      "alpha": 0.08,
+      "emission": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "emissionStrength": 0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_NYC_Stone_0",
+      "base": [
+        0.46000000834465027,
+        0.5099999904632568,
+        0.5799999833106995,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_NYC_Stone_1",
+      "base": [
+        0.5699999928474426,
+        0.5699999928474426,
+        0.6000000238418579,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_NYC_Day_Window",
+      "base": [
+        0.5199999809265137,
+        0.7099999785423279,
+        0.8199999928474426,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_NYC_Stone_2",
+      "base": [
+        0.46000000834465027,
+        0.3700000047683716,
+        0.3499999940395355,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_NYC_Stone_3",
+      "base": [
+        0.36000001430511475,
+        0.46000000834465027,
+        0.5299999713897705,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_NYC_NIGHT_Sky",
+      "base": [
+        0.012000000104308128,
+        0.02500000037252903,
+        0.08500000089406967,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.699999988079071,
+      "alpha": 1.0,
+      "emission": [
+        0.012000000104308128,
+        0.02500000037252903,
+        0.08500000089406967,
+        1.0
+      ],
+      "emissionStrength": 0.4000000059604645,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Oak",
+      "base": [
+        0.6299999952316284,
+        0.4300000071525574,
+        0.23999999463558197,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Porcelain",
+      "base": [
+        0.949999988079071,
+        0.9200000166893005,
+        0.8399999737739563,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Brass",
+      "base": [
+        0.6499999761581421,
+        0.44999998807907104,
+        0.18000000715255737,
+        1.0
+      ],
+      "metallic": 0.7200000286102295,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Clear_Glass",
+      "base": [
+        0.89,
+        0.94,
+        0.93,
+        1
+      ],
+      "metallic": 0.0,
+      "roughness": 0.10000000149011612,
+      "alpha": 0.08,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Sage",
+      "base": [
+        0.38999998569488525,
+        0.550000011920929,
+        0.38999998569488525,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Terracotta",
+      "base": [
+        0.6200000047683716,
+        0.3199999928474426,
+        0.20999999344348907,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Mirror",
+      "base": [
+        0.8299999833106995,
+        0.8799999952316284,
+        0.9100000262260437,
+        1.0
+      ],
+      "metallic": 1.0,
+      "roughness": 0.07000000029802322,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Cocoa",
+      "base": [
+        0.2199999988079071,
+        0.12999999523162842,
+        0.07999999821186066,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_Bathroom_Warm_Glow",
+      "base": [
+        1.0,
+        0.7900000214576721,
+        0.47999998927116394,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        0.6499999761581421,
+        0.30000001192092896,
+        1.0
+      ],
+      "emissionStrength": 3.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Cream",
+      "base": [
+        0.8700000047683716,
+        0.8100000023841858,
+        0.6899999976158142,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Oak",
+      "base": [
+        0.5699999928474426,
+        0.3700000047683716,
+        0.20000000298023224,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Charcoal",
+      "base": [
+        0.04500000178813934,
+        0.05000000074505806,
+        0.04500000178813934,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Sink",
+      "base": [
+        0.41999998688697815,
+        0.46000000834465027,
+        0.4300000071525574,
+        1.0
+      ],
+      "metallic": 0.6499999761581421,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Walnut",
+      "base": [
+        0.23999999463558197,
+        0.12999999523162842,
+        0.07500000298023224,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Sage",
+      "base": [
+        0.4000000059604645,
+        0.5,
+        0.3199999928474426,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Brass",
+      "base": [
+        0.6200000047683716,
+        0.4399999976158142,
+        0.20999999344348907,
+        1.0
+      ],
+      "metallic": 0.6499999761581421,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Oven_Glass",
+      "base": [
+        0.10999999940395355,
+        0.14000000059604645,
+        0.14000000059604645,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Dusty_Rose",
+      "base": [
+        0.699999988079071,
+        0.4699999988079071,
+        0.44999998807907104,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KitchenLiving_Light_Warm_Beige_Wallpaper_KL_North_Wall_Finish",
+      "base": [
+        0.8299999833106995,
+        0.7649999856948853,
+        0.6549999713897705,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.9100000262260437,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": "Baked_KL_North_Wall_Finish_BaseColor.png",
+      "normalTexture": "Baked_KL_North_Wall_Finish_Normal.png"
+    },
+    {
+      "name": "URP_KitchenLiving_Light_Warm_Beige_Wallpaper_KL_East_Wall_Finish",
+      "base": [
+        0.8299999833106995,
+        0.7649999856948853,
+        0.6549999713897705,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.9100000262260437,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": "Baked_KL_East_Wall_Finish_BaseColor.png",
+      "normalTexture": "Baked_KL_East_Wall_Finish_Normal.png"
+    },
+    {
+      "name": "URP_KitchenLiving_Light_Warm_Beige_Wallpaper_KL_West_Wall_Finish",
+      "base": [
+        0.8299999833106995,
+        0.7649999856948853,
+        0.6549999713897705,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.9100000262260437,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": "Baked_KL_West_Wall_Finish_BaseColor.png",
+      "normalTexture": "Baked_KL_West_Wall_Finish_Normal.png"
+    },
+    {
+      "name": "URP_KL_Rug",
+      "base": [
+        0.6200000047683716,
+        0.5299999713897705,
+        0.4000000059604645,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_TV_On",
+      "base": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "metallic": 0.0,
+      "roughness": 0.44999998807907104,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Fire_Glow",
+      "base": [
+        1.0,
+        0.3499999940395355,
+        0.054999999701976776,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        0.1899999976158142,
+        0.02500000037252903,
+        1.0
+      ],
+      "emissionStrength": 2.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Warm_Lamp",
+      "base": [
+        1.0,
+        0.800000011920929,
+        0.5199999809265137,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        0.6399999856948853,
+        0.30000001192092896,
+        1.0
+      ],
+      "emissionStrength": 1.5,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Entrance_Warm_Oak",
+      "base": [
+        0.5699999928474426,
+        0.36000001430511475,
+        0.1899999976158142,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Entrance_Woven_Beige_Entrance_Woven_Mat",
+      "base": [
+        0.4300000071525574,
+        0.33000001311302185,
+        0.2199999988079071,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": "Baked_Entrance_Woven_Mat_BaseColor.png",
+      "normalTexture": "Baked_Entrance_Woven_Mat_Normal.png"
+    },
+    {
+      "name": "URP_KL_Book_Sage_Cloth",
+      "base": [
+        0.3400000035762787,
+        0.47999998927116394,
+        0.3799999952316284,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Book_Warm_Paper",
+      "base": [
+        0.8899999856948853,
+        0.8500000238418579,
+        0.7200000286102295,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_KL_Book_Gold_Foil",
+      "base": [
+        0.6499999761581421,
+        0.49000000953674316,
+        0.25,
+        1.0
+      ],
+      "metallic": 0.4000000059604645,
+      "roughness": 0.6499999761581421,
+      "alpha": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "URP_TV_Indicator",
+      "base": [
+        0.019999999552965164,
+        0.03999999910593033,
+        0.02500000037252903,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "alpha": 1.0,
+      "emission": [
+        0.4000000059604645,
+        0.75,
+        0.5,
+        1.0
+      ],
+      "emissionStrength": 0.0,
+      "baseTexture": null,
+      "normalTexture": null
+    }
+  ],
+  "excluded": [
+    "Cube",
+    "Light",
+    "Camera",
+    "Bedroom_View_Target",
+    "Bedroom_Preview_Camera",
+    "DAY_Window_Sun",
+    "DAY_Room_Softbox",
+    "DAY_Sky_Backdrop",
+    "DAY_City_Fill",
+    "Bedroom_Panoramic_Daylight",
+    "Bathroom_Soft_Overhead",
+    "Bathroom_Mirror_Soft_Light",
+    "Living_Pendant_Light_0",
+    "Living_Pendant_Light_1",
+    "Living_Window_Daylight",
+    "Living_DAY_Sky",
+    "PC_Screen_Soft_Glow"
+  ],
+  "warnings": [],
+  "staticFrame": 1,
+  "roomDimensions": {
+    "Bedroom": [
+      7,
+      7
+    ],
+    "Bathroom": [
+      6,
+      5
+    ],
+    "KitchenLiving": [
+      10,
+      8
+    ]
+  },
+  "animationExported": false
+}
